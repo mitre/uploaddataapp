@@ -35,10 +35,7 @@ communication susceptible to man-in-the-middle attack
 ** AES-CBC encryption uses a static, predictable initialization vector (IV) embedded in the app code
 ** No MAC is used in conjunction with the AES-CBC encryption
 
-Additionally, the app demonstrates the use of runtime permissions introduced in Android 5.0.
-Since the app's targetSdkVersion is 23, if running on an Android 5.0+ device, in addition to the app
-declaring uses-permission entries for each app in its AndroidManifest.xml, the user must at runtime
-explicitly grant certain app permissions before the app can use them.
-
 ## Setup
-This project can easily be imported into Android Studio.
+This project can easily be imported into Android Studio. 
+It must be run on a device with **API level <= 22** (5.1 Lollipop)
+due to the new runtime permissions system introduced in API 23. (6.0 Marshmallow)
