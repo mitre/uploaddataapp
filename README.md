@@ -8,7 +8,7 @@ It contains a variety of deliberately inserted privacy violating behaviors and s
 Many are listed below along with the corresponding security requirement in the NIAP Protection Profile for Application Software
 (https://www.niap-ccevs.org/Profile/Info.cfm?id=394)
 
-More details can be found in our report, available at https://github.com/mitre/vulnerable-mobile-apps/blob/master/analyzing-effectiveness-mobile-app-vetting-tools-report.pdf
+More details can be found in our report , available at https://github.com/mitre/vulnerable-mobile-apps/blob/master/analyzing-effectiveness-mobile-app-vetting-tools-report.pdf
 
 * Access to device hardware resources (FDP_DEC_EXT.1.1)
 ** Activates device microphone for 5 seconds, writes audio to a file, and sends the file to a remote server
@@ -39,3 +39,6 @@ Additionally, the app demonstrates the use of runtime permissions introduced in 
 Since the app's targetSdkVersion is 23, if running on an Android 5.0+ device, in addition to the app
 declaring uses-permission entries for each app in its AndroidManifest.xml, the user must at runtime
 explicitly grant certain app permissions before the app can use them.
+
+## Setup
+This project can easily be imported into Android Studio.
