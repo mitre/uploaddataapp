@@ -38,4 +38,6 @@ communication susceptible to man-in-the-middle attack
 ## Setup
 This project can easily be imported into Android Studio. 
 It must be run on a device with **API level <= 22** (5.1 Lollipop)
-due to the new runtime permissions system introduced in API 23. (6.0 Marshmallow)
+due to the new runtime permissions system introduced in API 23. (6.0 Marshmallow)  
+
+Details on how to set up the server can be found at https://gist.github.com/mpeck12/9475044e521e229ad167515dc7be62bf
